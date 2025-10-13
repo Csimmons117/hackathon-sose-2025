@@ -4,6 +4,15 @@
 	background-color: black;
 	color: white;
 }
+.navCenter {
+
+display: flex;
+text-align: center;
+justify-content: center;
+width: 100%;
+margin: 0%;
+padding: 0%;
+}
 /*Start of nav*/
 nav{
 	font-size: 20px;
@@ -33,12 +42,14 @@ a{
 	
 }
 
-/*End of nav*/
 nav a:hover {
 	color:purple;
 }
 
+/*End of nav*/
 
+
+/* CAHTGPT */
 .dropdown {
     position: relative; /* Essential: Positions the dropdown content relative to this item */
     display: inline-block;
@@ -80,7 +91,7 @@ nav a:hover {
 .dropdown-content li:hover {
     background-color:black; 
 }
-
+/* CHATGPT */
 
 .test{
 	border: red,10px,solid;
@@ -138,7 +149,7 @@ h1, h2, nav {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	background-color: lightgray;
+	background-color: black;
 }
 .main{
 	display:inline-flex;
@@ -148,7 +159,7 @@ h1, h2, nav {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
-	background-color: lightgray;
+	background-color: black;
 
 }
 
@@ -173,7 +184,6 @@ h1, h2, nav {
 	align-items: center;      /* horizontal centering */
 	justify-content: center;  /* vertical centering */
 	text-align: center;
-	
 	height: 150px;
 }
 .space{
@@ -184,21 +194,23 @@ h1, h2, nav {
 	margin-left: auto;
 	margin-right: auto;
 	width: 35%;
-	/*border: blue, 10px, solid;*/
-	display: flex; /*this must be here before the center*/
+	border: purple, 10px, solid;*/
+	/* display: flex; this must be here before the center */
 	justify-content: center;/*Center the main div */
 
 }
 .imageLeft{
+	align-content: center;
+	text-align: center;
 	border: black, 5px, solid;
 
 }
 
 .description{
 	padding: 10px;
-	border: black, 5px, solid;
+	/* border: red, 5px, solid; */
 	text-align: center;
-	background-color: red;
+	background-color:black;
 	color: white;
 }
 
