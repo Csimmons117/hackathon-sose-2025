@@ -1,0 +1,79 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*Start of nav*/
+nav{
+	font-size: 20px;
+	margin: 20px;
+	border: 10px, pink, solid;
+	text-align: center;
+
+
+}
+nav ul{
+list-style: none;
+display: inline-flex;
+
+
+}
+nav li{
+	padding: 10px;
+
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/*End of nav*/
+table{
+	border: pink, 10px, solid;
+	margin: 60px;
+}
+
+td{
+	border: red, 10px, solid;
+	width: 50%;	
+}
+.test{
+	border: red,10px,solid;
+}
+.helloworld{
+	border: hotpink, 10px, solid ;
+	font-size: 50px;
+	text-align: center;
+}
+.welcome{
+	padding-left: auto;
+	padding-right: auto;
+	font-size: 20px;
+	width: 50%;
+
+}
+
+.SignUpLink{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 50%;
+	border: purple , 10px, solid;
+}
+.teamMembers{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.Announcements{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border: blue, 10px, solid;
+}
+.meetings{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+
+}
