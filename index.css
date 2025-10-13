@@ -196,7 +196,7 @@ h1, h2, nav {
 	width: 35%;
 	border: purple, 10px, solid;*/
 	/* display: flex; this must be here before the center */
-	justify-content: center;/*Center the main div */
+	/* justify-content: center;Center the main div */
 
 }
 .imageLeft{
@@ -220,4 +220,11 @@ h1, h2, nav {
 	margin-right: auto;
 	width: 100%;
 
+}
+td{
+	padding:30px;
+	font-size: 30px;
+}
+td img{
+	width: 300px;
 }
