@@ -1,56 +1,128 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	background-color: black;
+	color: white;
 }
 /*Start of nav*/
 nav{
 	font-size: 20px;
 	margin: 20px;
-	border: 10px, pink, solid;
+	border-bottom: 10px solid purple;
 	text-align: center;
 
 
 }
 nav ul{
+color: white;
 list-style: none;
 display: inline-flex;
+text-align: center;
 
 
 }
 nav li{
+	color: white;
 	padding: 10px;
+
 
 }
 a{
 	text-decoration: none;
-	color: black;
+	color: white;
+	
 }
 
 /*End of nav*/
-table{
-	
-	margin: 60px;
-	
+nav a:hover {
+	color:purple;
 }
 
-td{
-	border: red, 10px, solid;
-	padding: 10px;
-	
+
+.dropdown {
+    position: relative; /* Essential: Positions the dropdown content relative to this item */
+    display: inline-block;
 }
+
+/* 2. Style and hide the dropdown content */
+.dropdown-content {
+    /* Positioning */
+    display: none; /* Crucial: Hides the list by default */
+    position: absolute; /* Essential: Takes the list out of the normal flow */
+    top: 100%; /* Positions the list immediately below the 'More' link */
+    left: 0;
+
+    /* Appearance */
+    min-width: 160px; /* Ensures sufficient width */
+    background-color: black; /* Choose a suitable background color */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensures the dropdown appears on top of other content */
+
+    /* Inner link styling (optional but recommended) */
+    list-style-type: none;
+    padding: 0;
+}
+
+/* 3. Style the links within the dropdown */
+.dropdown-content li {
+    float: none; /* Resets the horizontal float to stack items vertically */
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+/* 4. Display the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* The critical step: makes the hidden content visible on hover */
+}
+
+/* Optional: Add hover effect for the dropdown links */
+.dropdown-content li:hover {
+    background-color:black; 
+}
+
+
 .test{
 	border: red,10px,solid;
 }
 .helloworld{
-	border: hotpink, 10px, solid ;
+	/* border: hotpink, 10px, solid ; */
 	font-size: 50px;
 	text-align: center;
 }
+/* PIXEL ART START - Dont you dare touch this!!!! */
+@font-face {
+  font-family: 'BoldPixels';
+  src: url('boldpixels/BoldPixels.ttf') format('truetype'),
+       url('boldpixels/BoldPixels.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'BoldPixels', monospace;
+  background-color: black;
+  color: purple;
+}
+
+h1, h2, nav {
+  font-family: 'BoldPixels', monospace;
+}
+/* PIXEL ART END */
+
+
+
 .welcome{
-	padding-left: auto;
-	padding-right: auto;
+	margin-left: 30%;
+	margin-right: 30%;
 	font-size: 20px;
-	width: 50%;
+	width: 40%;
+	float: none;
+	padding: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+	justify-content: center;
+	
 
 }
 
