@@ -155,7 +155,7 @@ h1, h2, nav {
 	display:inline-flex;
 	
 	width: 100%;
-	height: 50%;
+	height: 25%;
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
@@ -194,11 +194,10 @@ h1, h2, nav {
 	margin-left: auto;
 	margin-right: auto;
 	width: 35%;
-	border: purple, 10px, solid;*/
+	border: purple, 10px, solid;
 	/* display: flex; this must be here before the center */
 	/* justify-content: center;Center the main div */
-
-}
+	}
 .imageLeft{
 	align-content: center;
 	text-align: center;
@@ -221,10 +220,26 @@ h1, h2, nav {
 	width: 100%;
 
 }
-td{
+.size{
 	padding:30px;
 	font-size: 30px;
 }
 td img{
 	width: 300px;
+}
+
+
+.box1{
+	display: flex;
+	/* border: pink,solid, 10px; */
+}
+.box2{
+	/* border: red,solid, 10px; */
+width: 50%;
+margin-left: 20%;
+font-size: 25px;
+}
+.box3{
+	/* border: white,solid, 10px; */
+width: 50%;
 }
