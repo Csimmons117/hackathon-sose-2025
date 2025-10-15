@@ -189,7 +189,7 @@ h1, h2, nav {
 	margin-left: auto;
 	margin-right: auto;
 	width: 35%;
-	border: purple, 10px, solid;
+	/* border: purple, 10px, solid; */
 	/* display: flex; this must be here before the center */
 	/* justify-content: center;Center the main div */
 	}
@@ -235,6 +235,7 @@ margin-left: 20%;
 font-size: 25px;
 }
 .box3{
+	font-size: 25px;
 	/* border: white,solid, 10px; */
 width: 50%;
 }
@@ -272,6 +273,6 @@ width: 50%;
       0%, 100% { border-color: transparent }
       50%      { border-color: white }
     }
-	
+
 
    
