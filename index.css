@@ -225,53 +225,69 @@ td img{
 
 .box1{
 	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 24px;
 	/* border: pink,solid, 10px; */
 }
-.box2{
-	/* border: red,solid, 10px; */
-width: 50%;
-margin-left: 20%;
-font-size: 25px;
-}
+
+.box2,
 .box3{
+	/* border: red,solid, 10px; */
+	flex: 1 1 400px;
+	max-width: 100%;
 	font-size: 25px;
-	/* border: white,solid, 10px; */
-width: 50%;
 }
 
+.box2{
+	margin-left: 0;
+}
+.box1 img,
+.box2 img,
+.box3 img,
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+@media (max-width: 900px){
+	.box2,
+	.box3{
+		flex: 1 1 100%;
+	}
+}
+.typing-container {
+  display: flex;
+  justify-content: center;
+	text-align: center;
+	align-items: center;
+	height: 350px;
+}
 
-    .typing-container {
-      display: flex;
-	  justify-content: center;
-		text-align: center;
-		align-items: center;
-		height: 350px;
-    }
-
-    .typed-text {
-		
-	  font-size: 50px;
-      display: inline-block;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 0.15em solid transparent;
-      animation: 
-        typing 4s steps(20, end) 1s infinite,
-        blink 0.7s step-end infinite;
-    }
+.typed-text {
+	
+  font-size: 50px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid transparent;
+  animation: 
+    typing 4s steps(20, end) 1s infinite,
+    blink 0.7s step-end infinite;
+}
 
     /* Typing animation */
-    @keyframes typing {
-      0%   { width: 0 }
-      70%  { width: 20ch }  /* Typing stops here */
-      90%  { width: 20ch }  /* Pause at full text for ~1.2s */
-      100% { width: 0 }     /* Erase */
-    }
+@keyframes typing {
+  0%   { width: 0 }
+  70%  { width: 20ch }  /* Typing stops here */
+  90%  { width: 20ch }  /* Pause at full text for ~1.2s */
+  100% { width: 0 }     /* Erase */
+}
 
-    @keyframes blink {
-      0%, 100% { border-color: transparent }
-      50%      { border-color: white }
-    }
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+  50%      { border-color: white }
+}
 
 
    
