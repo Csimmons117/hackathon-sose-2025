@@ -21,14 +21,14 @@ class SiteInclude extends HTMLElement{
 
 class SiteHeader extends SiteInclude {
     connectedCallback() {
-        const src = this.getAttribute("src") || "/components/header.html";
+        const src = this.getAttribute("src") || "./components/header.html";
         this.loadFragment(src);
     }
 }
 
 class SiteFooter extends SiteInclude {
     connectedCallback() {
-        const src = this.getAttribute("src") || "/components/footer.html";
+        const src = this.getAttribute("src") || "./components/footer.html";
         this.loadFragment(src);
     }
 }
