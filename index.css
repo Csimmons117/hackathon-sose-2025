@@ -206,15 +206,17 @@ h1, h2, nav {
 .picture {
 	width: 150px;
 	height: 150px;
-	border: 2px solid black; /* FIXED: correct syntax for border */
+	/*border: 2px solid black; /* FIXED: correct syntax for border */
 	overflow: hidden;
 	background-color: black;
+	border-radius: 50%; /*makes the picture a pretty circle*/
 }
 
 .picture img {
 	height: 100%;
 	width: 100%;
-	object-fit: contain;
+	object-fit: cover;
+	object-position: 40% 30%; /*focus area x, y*/
 }
 
 .words {
