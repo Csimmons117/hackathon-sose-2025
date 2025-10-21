@@ -319,14 +319,14 @@ img {
 
 .typed-text {
 	
-  font-size: 50px;
+  font-size: 75px;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.15em solid transparent;
   animation: 
-    typing 4s steps(20, end) 1s infinite,
-    blink 0.7s step-end infinite;
+    typing 4s steps(30, end), /*  1s infinite, */
+    blink 1.2s step-end infinite;
 }
 
 .footer{
@@ -359,7 +359,7 @@ img {
   0%   { width: 0 }
   70%  { width: 20ch }  /* Typing stops here */
   90%  { width: 20ch }  /* Pause at full text for ~1.2s */
-  100% { width: 0 }     /* Erase */
+  /* 100% { width: 0 }     /* Erase */ */
 }
 
 @keyframes blink {
@@ -452,9 +452,9 @@ img {
 /* CTA strip */
 .cta-strip {
   text-align: center;
-  padding: 48px 16px;
-  border-top: 2px solid var(--accent);
-  border-bottom: 2px solid var(--accent);
+  /* padding: 48px 16px; */
+  /* border-top: 2px solid var(--accent); */
+  /* border-bottom: 2px solid var(--accent); */
   margin-block: 40px;
 }
 .cta-strip h2 { font-size: clamp(24px, 4vw, 36px); margin-bottom: 6px; }
