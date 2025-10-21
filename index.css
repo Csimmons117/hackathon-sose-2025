@@ -47,7 +47,12 @@ nav a:hover {
 }
 
 /*End of nav*/
+nav {
+  position: relative;
+  z-index: 9999;
+}
 
+/*Dont remove the nav above need to research this more but with out this merch disappears from the nav of home*/
 
 /* CAHTGPT */
 .dropdown {
@@ -108,27 +113,27 @@ nav a:hover {
 	background-color: purple;
 
 }
-.testimg{
+/*.testimg{
 	width: 100%;       
 	height: 50vh;      
 	overflow: hidden; 
 
 
-  /* Center and scale the image nicely */
+  /* Center and scale the image nicely ////
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-}
+}*/
 
 
 
-  .testimg img {
+/*  .testimg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: bottom; /* default for narrow screens */
-}
+}*/
 
 @media (min-width: 800px) {
   .testimg img {
