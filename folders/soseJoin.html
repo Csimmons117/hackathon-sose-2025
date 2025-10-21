@@ -1,37 +1,230 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	    <title></title>
-	    <link rel="stylesheet" type="text/css" href="../index.css">
-	</head>
-<nav>
-    <ul>
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+	<!-- <head> -->
+	    <!-- <title></title> -->
+	    <!-- <link rel="stylesheet" type="text/css" href="../index.css"> -->
+	<!-- </head> -->
+<!-- <nav> -->
+    <!-- <ul> -->
         <!-- <li><img src="./pictures/sose_logo.jpg" style="width: 30%;"></li> -->
-  
-        <div class="navCenter">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./soseTeam.html">Team</a></li>
-            <li><a href="./soseJoin.html">Join</a></li>
-            <li> <a href="./soseEvents.html">Events</a></li>
+  <!--  -->
+        <!-- <div class="navCenter"> -->
+            <!-- <li><a href="../index.html">Home</a></li> -->
+            <!-- <li><a href="./soseTeam.html">Team</a></li> -->
+            <!-- <li><a href="./soseJoin.html">Join</a></li> -->
+            <!-- <li> <a href="./soseEvents.html">Events</a></li> -->
             <!-- Come back to this later -->
-            <li class="dropdown">
-                <a href="#" class="dropbtn">More</a> <ul class="dropdown-content">
-                    <li><a href="./tutor.html">Tutoring</a></li>
-                    <li><a href="./news.html">News</a></li>
-                    <li><a href="./merch.html">Merch</a></li>
-                    
-                </ul>
-            </li>
-        </div>
-        </ul>
-</nav>
-    <body>
-        <div class="helloworld">
-            Improve Your Skills Today!
-        </div>
+            <!-- <li class="dropdown"> -->
+                <!-- <a href="#" class="dropbtn">More</a> <ul class="dropdown-content"> -->
+                    <!-- <li><a href="./tutor.html">Tutoring</a></li> -->
+                    <!-- <li><a href="./news.html">News</a></li> -->
+                    <!-- <li><a href="./merch.html">Merch</a></li> -->
+                    <!--  -->
+                <!-- </ul> -->
+            <!-- </li> -->
+        <!-- </div> -->
+        <!-- </ul> -->
+<!-- </nav> -->
+    <!-- <body> -->
+        <!-- <div class="helloworld"> -->
+            <!-- Improve Your Skills Today! -->
+        <!-- </div> -->
+<!--  -->
+	    <!-- <div class="typing-container"> -->
+            <!-- <p class="typed-text"><a href="https://csun.campuslabs.com/engage/organization/sose">Click here to join today!</a></p> -->
+        <!-- </div> -->
+    <!-- </body> -->
+<!-- </html> -->
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Join SOSE — Society of Software Engineers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- use the shared site styles -->
+    <link rel="stylesheet" href="../index.css" />
 
-	    <div class="typing-container">
-            <p class="typed-text"><a href="https://csun.campuslabs.com/engage/organization/sose">Click here to join today!</a></p>
+    <style>
+      /* --- PAGE-SPECIFIC STYLES (kept minimal, build on index.css) --- */
+
+      /* Hero uses your big club photo */
+      .join-hero {
+        position: relative;
+        min-height: 50vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        color: white;
+        background: url("../SOSEclub.jpg") center / cover no-repeat;
+        border-bottom: 2px solid var(--accent);
+      }
+      .join-hero::after {
+        content: "";
+        position: absolute; inset: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.85));
+      }
+      .join-hero__content {
+        position: relative; z-index: 1;
+        padding: 28px 16px;
+      }
+      .join-hero__logo {
+        width: 110px; height: 110px; border-radius: 50%;
+        border: 3px solid var(--accent);
+        background: #0f0f0f;
+        display:inline-grid; place-items:center; margin-bottom: 12px;
+      }
+      .join-hero__logo img { width: 80%; height: auto; display:block; }
+
+      .join-hero h1 { font-size: clamp(28px, 5vw, 56px); margin: 6px 0 4px; }
+      .join-hero p { opacity: .95; font-size: clamp(16px, 2.6vw, 22px); }
+
+      /* Three CTA cards */
+      .join-cards {
+        width:min(1100px,92%);
+        margin: 32px auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:18px;
+      }
+      .join-card {
+        background: var(--card);
+        border: 1px solid #1e1e1e;
+        border-radius: 16px;
+        padding: 22px;
+        text-align: center;
+        transition: transform .08s ease, box-shadow .18s ease, border-color .18s ease;
+      }
+      .join-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent);
+        box-shadow: 0 8px 24px rgba(176,48,255,.15);
+      }
+      .join-card__icon {
+        width:64px; 
+        height:64px; 
+        margin-inline:auto 12px; 
+        margin-bottom:10px;
+        width: 64px;
+        object-fit: contain;
+        display: block;
+        display:grid; 
+        place-items: center;
+      }
+      .join-card h3 { color: var(--accent); margin: 4px 0 6px; }
+      .join-card p { color:#d6d6d6; min-height: 44px; }
+
+      .join-actions {
+        margin-top: 14px;
+        display:flex; gap:10px; justify-content:center; flex-wrap:wrap;
+      }
+
+      /* Link buttons reuse .btn tokens from index.css */
+      .btn--brand-red    { border-color:#c3002f; color:#fff; background:#c3002f; }
+      .btn--brand-blue   { border-color:#0a66c2; color:#fff; background:#0a66c2; }
+      .btn--brand-blurple{ border-color:#5865F2; color:#fff; background:#5865F2; }
+      .btn--brand-red:hover     { background:#d41d48; }
+      .btn--brand-blue:hover    { background:#1473d2; }
+      .btn--brand-blurple:hover { background:#6b74f7; }
+
+      /* Info section */
+      .join-steps {
+        width:min(900px,92%);
+        margin: 26px auto 40px;
+        text-align: left;
+        background:#0f0f0f;
+        border:1px solid #1f1f1f;
+        border-radius:16px;
+        padding:20px 22px;
+      }
+      .join-steps h2 { color: var(--accent); margin-bottom: 10px; }
+      .join-steps ol { margin-left: 18px; }
+      .join-steps li { margin: 6px 0; color:#eaeaea; }
+
+      @media (max-width: 900px){
+        .join-cards{ grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- (Optional) keep your existing nav; this file focuses on the join content -->
+
+    <!-- HERO -->
+    <section class="join-hero">
+      <div class="join-hero__content">
+        <div class="join-hero__logo">
+          <img src="../pictures/sose_logo.jpg" alt="SOSE logo" />
         </div>
-    </body>
+        <h1>Join the Society of Software Engineers</h1>
+        <p>Find your team. Build projects. Grow your career.</p>
+      </div>
+    </section>
+
+    <!-- THREE LINK CARDS -->
+    <section class="join-cards">
+      <!-- Matasync -->
+      <article class="join-card">
+        <div class="join-card__icon" aria-hidden="true">
+            <img src="../pictures/Matahead.png" alt="Matasync Logo">
+        </div>
+        <h3>Matasync (Official)</h3>
+        <p>Join our university roster and get notified for meetings and events.</p>
+        <div class="join-actions">
+          <a class="btn btn--brand-red" href="https://csun.campuslabs.com/engage/organization/sose" target="_blank" rel="noopener">Open Matasync</a>
+        </div>
+      </article>
+
+      <!-- LinkedIn -->
+      <article class="join-card">
+        <div class="join-card__icon" aria-hidden="true">
+            <img src="../pictures/Linked%20In%20photo.png" alt="LinkedIn logo">
+        </div>
+        <h3>LinkedIn</h3>
+        <p>Follow SOSE on LinkedIn for updates, photos, and opportunities.</p>
+        <div class="join-actions">
+          <a class="btn btn--brand-blue" href="https://www.linkedin.com/company/csun-society-of-software-engineers/" target="_blank" rel="noopener">Follow on LinkedIn</a>
+        </div>
+      </article>
+
+      <!-- Discord -->
+      <article class="join-card">
+        <div class="join-card__icon" aria-hidden="true">
+            <img src="../pictures/Discord-Symbol-Blurple.png" alt="Discord logo">
+        </div>
+        <h3>Discord</h3>
+        <p>Chat with members, get help, and join project squads in real time.</p>
+        <div class="join-actions">
+          <a class="btn btn--brand-blurple" href="https://discord.gg/wQwrP9C6NY" target="_blank" rel="noopener">Join our Discord</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- HOW TO JOIN (quick steps) -->
+    <section class="join-steps">
+      <h2>How to join</h2>
+      <ol>
+        <li>Open <strong>Matasync</strong> and click “Join Organization”.</li>
+        <li>Hop into the <strong>Discord</strong> and introduce yourself.</li>
+        <li>Follow us on <strong>LinkedIn</strong> and never miss an update.</li>
+      </ol>
+      <p style="margin-top:10px; color:#cfcfcf;">
+        Questions? Bring them to the next meeting—we’re happy to help!
+      </p>
+    </section>
+
+    <!-- Optional footer using your .footer class -->
+    <div class="footer">
+      <p>&copy; <span id="year"></span> Society of Software Engineers • CSUN</p>
+      <p>
+        <a href="../index.html">Home</a> ·
+        <a href="./soseEvents.html">Events</a> ·
+        <a href="./soseTeam.html">Team</a>
+      </p>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
+
