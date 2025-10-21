@@ -17,7 +17,7 @@ padding: 0%;
 nav{
 	font-size: 35px;
 	margin: 20px;
-	border-bottom: 10px solid purple;
+	/* border-bottom: 10px solid purple; */
 	text-align: center;
 
 
@@ -101,6 +101,42 @@ nav a:hover {
 	font-size: 50px;
 	text-align: center;
 }
+.soseTitle{
+	font-size: 50px;
+	text-align: center;
+	color:white;
+	background-color: purple;
+
+}
+.testimg{
+	width: 100%;       
+	height: 50vh;      
+	overflow: hidden; 
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+  .testimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom; /* default for narrow screens */
+}
+
+@media (min-width: 800px) {
+  .testimg img {
+    object-position: center; /* show center on wide screens */
+  }
+}
+
+
 /* PIXEL ART START - Dont you dare touch this!!!! */
 @font-face {
   font-family: 'BoldPixels';
