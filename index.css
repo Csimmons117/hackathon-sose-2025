@@ -147,6 +147,8 @@ nav a:hover {
 }
 
 body {
+  margin: 0;
+  color: white;
   font-family: 'BoldPixels', monospace;
   background-color: black;
   color: purple;
