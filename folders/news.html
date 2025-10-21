@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SOSE | Tech News</title>
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <style>
+    /* Minimal Hacker News–style list */
+    :root{--muted:#777;--accent:#ff6600}
+    body{font-family:Verdana, Geneva, sans-serif;background:#050007;color:#eaeaea;margin:20px;padding:0 260px}
+    .hn-wrap{max-width:820px;margin:0 auto}
+
+    /* Cyberpunk side panels */
+    .side-panel{position:fixed;top:20px;bottom:20px;width:220px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;font-family:monospace;border-radius:6px;overflow:hidden}
+    .side-panel.left{left:20px;background:linear-gradient(180deg,#1a0026 0%,#2c003e 100%);border:8px solid rgba(160,40,240,0.95);box-shadow:0 0 50px rgba(160,40,240,0.14)}
+    .side-panel.right{right:20px;background:linear-gradient(180deg,#12001f 0%,#001427 100%);border:8px solid rgba(120,30,200,0.9);box-shadow:0 0 50px rgba(120,30,200,0.12)}
+    .side-panel::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:repeating-linear-gradient(transparent, rgba(255,255,255,0.02) 1px)}
+    .side-panel .neon{writing-mode:vertical-rl;transform:rotate(180deg);font-size:18px;color:#c58cff;text-shadow:0 0 10px #c58cff,0 0 28px #b000ff;letter-spacing:2px;z-index:2}
+    .side-panel .glow-rect{width:84%;height:64px;border:3px dashed rgba(255,255,255,0.04);box-shadow:0 0 24px rgba(180,70,240,0.08);margin-top:18px;opacity:0.98;display:flex;align-items:center;justify-content:center}
+    .side-panel .glow-rect .label{color:rgba(255,255,255,0.95);font-size:12px}
+    @keyframes flicker{0%{opacity:1}40%{opacity:.9}60%{opacity:.96}100%{opacity:1}}
+    .side-panel .neon{animation:flicker 2.5s infinite}
+        h1{font-size:20px;margin-bottom:12px}
+        .nav-inline{margin-bottom:10px}
+        .nav-inline a{margin-right:12px;color:inherit;text-decoration:none}
+        .nav-inline a:hover{text-decoration:underline}
+        ol.hn-list{list-style:none;padding:0;margin:0}
+        .item{display:flex;gap:12px;padding:12px 0;border-top:1px solid #eee;align-items:flex-start}
+        .item:first-child{border-top:0}
+        .vote{width:56px;text-align:center;font-size:18px;color:var(--accent);user-select:none}
+        .vote button{background:transparent;border:0;font-size:20px;cursor:pointer;color:var(--accent)}
+        .score{font-weight:700;margin-top:4px}
+        .details{flex:1}
+    .title{font-size:18px;margin:0 0 4px 0;line-height:1.25;text-align:center}
+    .title a{color:#fff;text-decoration:none;display:block}
+    .title a:hover{text-decoration:underline}
+        .domain{color:var(--muted);font-size:12px;margin-left:6px}
+        .meta{font-size:12px;color:var(--muted)}
+        .meta a{color:var(--muted);text-decoration:none}
+        .meta a:hover{text-decoration:underline}
+        @media (max-width:520px){.vote{width:44px}.title{font-size:15px}}
+    </style>
+</head>
+<body>
+    <div class="side-panel left">
+        <div class="neon">SOSE</div>
+        <div class="glow-rect"><div class="label">Live Feeds</div></div>
+        <div style="height:8px"></div>
+        <div class="glow-rect"><div class="label">Sponsors</div></div>
+    </div>
+
+    <div class="side-panel right">
+        <div class="neon">NEWS</div>
+        <div class="glow-rect"><div class="label">Top Ops</div></div>
+        <div style="height:8px"></div>
+        <div class="glow-rect"><div class="label">Alerts</div></div>
+    </div>
+
+    <div class="hn-wrap">
+        <nav class="nav-inline">
+            <a href="../index.html">Home</a>
+            <a href="soseTeam.html">Team</a>
+            <a href="soseJoin.html">Join</a>
+            <a href="soseEvents.html">Events</a>
+        </nav>
+
+        <h1>SOSE — Tech News</h1>
+
+    <ol class="hn-list" id="news-list">
+            <li class="item" data-id="aws-outage">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="aws-outage">▲</button>
+                    <div class="score" data-score-id="aws-outage">128</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="https://apnews.com/article/amazon-east-internet-services-outage-654a12ac9aff0bf4b9dc0e22499d92d7" target="_blank" rel="noopener">Amazon outage hits internet services across regions</a>
+                        <span class="domain">(apnews.com)</span>
+                    </div>
+                    <div class="meta"><span class="muted">128 points</span> by <a href="#">AP</a> <span class="muted">• Oct 20, 2025</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+
+            <li class="item" data-id="anthropic-claude">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="anthropic-claude">▲</button>
+                    <div class="score" data-score-id="anthropic-claude">34</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="https://techcrunch.com/2025/10/20/anthropic-brings-claude-code-to-the-web/" target="_blank" rel="noopener">Anthropic brings Claude Code to the web</a>
+                        <span class="domain">(techcrunch.com)</span>
+                    </div>
+                    <div class="meta"><span class="muted">34 points</span> by <a href="#">TechCrunch</a> <span class="muted">• Oct 20, 2025</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+
+            <li class="item" data-id="nvidia-texas">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="nvidia-texas">▲</button>
+                    <div class="score" data-score-id="nvidia-texas">19</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="https://www.wsj.com/tech/ai/west-texas-data-center-nvidia-e38a4678?mod=tech_more_article_pos3" target="_blank" rel="noopener">Nvidia-backed West Texas data center raises infrastructure questions</a>
+                        <span class="domain">(wsj.com)</span>
+                    </div>
+                    <div class="meta"><span class="muted">19 points</span> by <a href="#">WSJ</a> <span class="muted">• Oct 19, 2025</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+
+            <!-- additional dummy items to fill the page -->
+            <li class="item" data-id="startups-funding">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="startups-funding">▲</button>
+                    <div class="score" data-score-id="startups-funding">12</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="#" target="_blank" rel="noopener">Series B funding fuels AI startup growth in 2025</a>
+                        <span class="domain">(technews.example)</span>
+                    </div>
+                    <div class="meta"><span class="muted">12 points</span> by <a href="#">startupwatch</a> <span class="muted">• 6 hours ago</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+
+            <li class="item" data-id="opensource-release">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="opensource-release">▲</button>
+                    <div class="score" data-score-id="opensource-release">8</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="#" target="_blank" rel="noopener">Major update released for popular open-source web framework</a>
+                        <span class="domain">(github.com)</span>
+                    </div>
+                    <div class="meta"><span class="muted">8 points</span> by <a href="#">oss_maintainer</a> <span class="muted">• 1 day ago</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+
+            <li class="item" data-id="cybersecurity-alert">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="cybersecurity-alert">▲</button>
+                    <div class="score" data-score-id="cybersecurity-alert">7</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="#" target="_blank" rel="noopener">New vulnerability disclosed affecting common container runtimes</a>
+                        <span class="domain">(securityblog.example)</span>
+                    </div>
+                    <div class="meta"><span class="muted">7 points</span> by <a href="#">sec_ops</a> <span class="muted">• 2 days ago</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+
+            <li class="item" data-id="cloud-pricing">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="cloud-pricing">▲</button>
+                    <div class="score" data-score-id="cloud-pricing">6</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="#" target="_blank" rel="noopener">Cloud providers roll out new pricing for serverless offerings</a>
+                        <span class="domain">(cloudnews.example)</span>
+                    </div>
+                    <div class="meta"><span class="muted">6 points</span> by <a href="#">cloudwatch</a> <span class="muted">• 3 days ago</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+
+            <li class="item" data-id="ai-benchmarks">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="ai-benchmarks">▲</button>
+                    <div class="score" data-score-id="ai-benchmarks">5</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="#" target="_blank" rel="noopener">New benchmarks compare LLM performance on code tasks</a>
+                        <span class="domain">(mlbench.example)</span>
+                    </div>
+                    <div class="meta"><span class="muted">5 points</span> by <a href="#">ml_research</a> <span class="muted">• 4 days ago</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+
+            <li class="item" data-id="privacy-regs">
+                <div class="vote">
+                    <button aria-label="upvote" data-id="privacy-regs">▲</button>
+                    <div class="score" data-score-id="privacy-regs">4</div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <a href="#" target="_blank" rel="noopener">New privacy regulations proposed for AI model training data</a>
+                        <span class="domain">(lawtech.example)</span>
+                    </div>
+                    <div class="meta"><span class="muted">4 points</span> by <a href="#">policy_lab</a> <span class="muted">• 5 days ago</span> | <a href="#">discuss</a></div>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        // Simple upvote logic persisted to localStorage by id
+        (function(){
+            const STORAGE_KEY = 'sose_news_votes_v1';
+            const defaultVotes = {
+                'aws-outage':128,
+                'anthropic-claude':34,
+                'nvidia-texas':19,
+                'startups-funding':12,
+                'opensource-release':8,
+                'cybersecurity-alert':7,
+                'cloud-pricing':6,
+                'ai-benchmarks':5,
+                'privacy-regs':4
+            };
+
+            function loadVotes(){
+                try{
+                    const raw = localStorage.getItem(STORAGE_KEY);
+                    if(!raw) return {...defaultVotes};
+                    const parsed = JSON.parse(raw);
+                    return {...defaultVotes, ...parsed};
+                }catch(e){return {...defaultVotes};}
+            }
+
+            function saveVotes(v){ localStorage.setItem(STORAGE_KEY, JSON.stringify(v)); }
+
+            const votes = loadVotes();
+
+            // initialize scores in DOM
+            Object.keys(votes).forEach(id=>{
+                const el = document.querySelector('[data-score-id="'+id+'"]');
+                if(el) el.textContent = votes[id];
+            });
+
+            document.getElementById('news-list').addEventListener('click', function(e){
+                const btn = e.target.closest('button[aria-label="upvote"]');
+                if(!btn) return;
+                const id = btn.dataset.id;
+                votes[id] = (votes[id]||0) + 1;
+                const scoreEl = document.querySelector('[data-score-id="'+id+'"]');
+                if(scoreEl) scoreEl.textContent = votes[id];
+                saveVotes(votes);
+            });
+        })();
+    </script>
+</body>
+</html>
