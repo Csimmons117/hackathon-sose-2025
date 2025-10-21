@@ -452,9 +452,9 @@ img {
 /* CTA strip */
 .cta-strip {
   text-align: center;
-  padding: 48px 16px;
-  border-top: 2px solid var(--accent);
-  border-bottom: 2px solid var(--accent);
+  /* padding: 48px 16px; */
+  /* border-top: 2px solid var(--accent); */
+  /* border-bottom: 2px solid var(--accent); */
   margin-block: 40px;
 }
 .cta-strip h2 { font-size: clamp(24px, 4vw, 36px); margin-bottom: 6px; }
