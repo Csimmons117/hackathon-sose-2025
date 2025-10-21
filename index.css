@@ -230,11 +230,17 @@ h1, h2, nav {
 	/* border: purple, 10px, solid; */
 	/* display: flex; this must be here before the center */
 	/* justify-content: center;Center the main div */
-	}
-.imageLeft{
-	align-content: center;
+
 	text-align: center;
-	border: black, 5px, solid;
+
+	}
+.imageLeft img {
+	display: block;       
+  margin-left: auto;    
+  margin-right: auto;   
+
+
+	/*border: purple, 10px, solid;*/
 
 }
 
@@ -255,6 +261,15 @@ h1, h2, nav {
 .size{
 	padding:30px;
 	font-size: 30px;
+	text-align: center;
+	align-items: center;
+}
+
+td{
+text-align: center;
+	align-items: center;
+	display: inline-block; /*DONT TOUCH THIS OR THE PRICE WILL NOT BE CENTERED - cameron */
+
 }
 td img{
 	width: 300px;
