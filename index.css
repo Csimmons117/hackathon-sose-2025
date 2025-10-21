@@ -312,25 +312,30 @@ img {
     blink 0.7s step-end infinite;
 }
 
-footer{
+.footer{
   text-align: center;              
   padding: 20px;                   
   margin-top: 40px; 
-  border-top: 2px solid white;              
+  border-top: 2px solid purple;              
   background-color: black;         
   color: white;                    
   font-size: 16px;                 
 }
 
 
-footer a{
+.footer a{
   color: purple;                   
   text-decoration: none;
-  margin: 0 8px;                   
+  margin: 0 8px;
+  transition: color 0.2s ease;                   
 }
 
-footer a:hover{
+.footer a:hover{
   color: white;                    
+}
+
+.footer p{
+	margin: 6px 0;
 }
     /* Typing animation */
 @keyframes typing {
@@ -343,6 +348,116 @@ footer a:hover{
 @keyframes blink {
   0%, 100% { border-color: transparent }
   50%      { border-color: white }
+}
+
+:root {
+  --accent: #b030ff;
+  --text: #fff;
+  --bg: #000;
+  --card: #0f0f0f;
+}
+/* Universal container */
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: transform 0.08s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn--primary { background: var(--accent); color: var(--text); }
+.btn--primary:hover { background: #c35cff; }
+.btn--ghost { color: var(--text); border-color: var(--accent); }
+.btn--ghost:hover { background: #1a1a1a; }
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 62vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--text);
+  background: url("images/sose-club.jpg") center / cover no-repeat;
+}
+.hero__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.75));
+}
+.hero__content { position: relative; z-index: 1; padding: 24px; }
+.hero h1 { font-size: clamp(32px, 5vw, 60px); margin-bottom: 12px; }
+.hero p { font-size: clamp(16px, 2.6vw, 22px); opacity: .92; }
+.hero__cta { margin-top: 18px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* Pitch cards */
+.pitch {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 45px auto;
+}
+.pitch__card {
+  background: var(--card);
+  border: 1px solid #1e1e1e;
+  border-radius: 16px;
+  padding: 22px;
+  text-align: left;
+}
+.pitch__card h3 { color: var(--accent); margin-bottom: 8px; }
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 18px auto 52px;
+}
+.gallery__item {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #1f1f1f;
+}
+.gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CTA strip */
+.cta-strip {
+  text-align: center;
+  padding: 48px 16px;
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  margin-block: 40px;
+}
+.cta-strip h2 { font-size: clamp(24px, 4vw, 36px); margin-bottom: 6px; }
+.cta-strip p { opacity: .9; margin-bottom: 14px; }
+.cta-strip__buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* Footer */
+footer {
+  text-align: center;
+  border-top: 2px solid var(--accent);
+  padding: 16px;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pitch { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: 1fr; }
 }
 
 
