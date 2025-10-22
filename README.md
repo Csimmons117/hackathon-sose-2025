@@ -1,6 +1,6 @@
 # SOSE Hackathon 2025 – Project Report  
 **Project Title:** SOSE Club Website  
-**Team Members:** [Add team member names here]  
+**Team Members:** Elijah Becker, Brandon Mercado, Jack Salazar, Koosh Salimkhan, Cameron Simmons, Jonathan Sher
 **Category:** Hack for SOSE  
 **Tech Stack:** HTML, CSS, JavaScript, GitHub, Apache2, Ubuntu 24.04, Cloudflare, ZeroTier  
 
