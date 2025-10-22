@@ -1,60 +1,70 @@
-<! DOCTYPE html>
-	<html>
-	<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="../index.css">
-    
-	</head>
-	<nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutoring | Society of Software Engineers</title>
+  <link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+
+<body style="background-color: black">
+
+  <!-- Navigation -->
+  <nav>
     <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./soseTeam.html">Team</a></li>
-        <li><a href="./soseJoin.html">Join</a></li>
-        <li> <a href="./soseEvents.html">Events</a></li>
-        <!-- Come back to this later -->
-        <li class="dropdown">
-            <a href="#" class="dropbtn">More</a> <ul class="dropdown-content">
-                <li><a href="./tutor.html">Tutoring</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="./merch.html">Merch</a></li>
-            </ul>
-        </li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./soseTeam.html">Team</a></li>
+      <li><a href="./soseJoin.html">Join</a></li>
+      <li><a href="./soseEvents.html">Events</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">More</a>
+        <ul class="dropdown-content">
+          <li><a href="./tutor.html">Tutoring</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="./merch.html">Merch</a></li>
         </ul>
-</nav>
-<div class="helloworld">
-            Drop-In Tutoring!
-        </div>
-        <body>
-<div class="box1">
+      </li>
+    </ul>
+  </nav>
 
+  <!-- Page Title -->
+  <div class="helloworld">
+    Drop-In Tutoring!
+  </div>
+
+  <!-- Main Content -->
+  <div class="box1">
     <div class="box2">
-        Our tutors are current students who have shown both a strong understanding 
-        of the material and the ability to assist those who need some additional support with their coursework.
-
-        To access tutoring services, you must first be enrolled in the CECS Academic Enrichment Tutoring Services 
-        Canvas Course. You can self-enroll in the course using this <br>URL: <a href="https://canvas.csun.edu/enroll/743JYW" style="color:yellow;">CLICK HERE</a>
-    </div>
-    <div class="box3"><img src="../pictures/campusMap.png"></div>
-</div>
-<br>
-<br>
-<br>
-<div class="box1">
-
-    <div class="box2">
-        Tutor's Subject Index : FALL 2025
-        <br>
-        <img src="../pictures/tutors.png" style="width:400px">
+      Our tutors are current students who have shown both a strong understanding 
+      of the material and the ability to assist those who need some additional support with their coursework.
+      <br><br>
+      To access tutoring services, you must first be enrolled in the CECS Academic Enrichment Tutoring Services 
+      Canvas Course. You can self-enroll in the course using this 
+      <a href="https://canvas.csun.edu/enroll/743JYW" style="color:yellow;">CLICK HERE</a>.
     </div>
     <div class="box3">
-        Tutor's Scheduled Hours: FALL 2025
-        <br>
-        <img src="../pictures/worksheet.png" style="width:400px; height: 500px;">
+      <img src="../pictures/campusMap.png" alt="Campus Map">
     </div>
-</div>
-<br>
-<br>
-<br>
+  </div>
 
-	</body>
+  <br><br><br>
+
+  <div class="box1">
+    <div class="box2">
+      Tutor's Subject Index : FALL 2025
+      <br>
+      <img src="../pictures/tutors.png" style="width:400px" alt="Tutor Subjects">
+    </div>
+    <div class="box3">
+      Tutor's Scheduled Hours : FALL 2025
+      <br>
+      <img src="../pictures/worksheet.png" style="width:400px; height:500px;" alt="Tutor Hours">
+    </div>
+  </div>
+
+  <!-- GSAP Scripts -- Koosh -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="../main.js"></script>
+
+</body>
 </html>

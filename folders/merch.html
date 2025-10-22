@@ -1,84 +1,82 @@
-<! DOCTYPE html>
-	<html>
-	<head>
-		<title>SOSE | Society Of Software Engineers</title>
-		<link rel="stylesheet" type="text/css" href="../index.css">
-        
-	</head>
-	
-	<nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merch | Society of Software Engineers</title>
+  <link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+
+<body style="background-color: black">
+
+  <!-- Navigation -- Koosh -->
+  <nav>
     <ul>
-        <!-- <li><img src="./pictures/sose_logo.jpg" style="width: 30%;"></li> -->
-  
-        <div class="navCenter">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./soseTeam.html">Team</a></li>
-            <li><a href="./soseJoin.html">Join</a></li>
-            <li> <a href="./soseEvents.html">Events</a></li>
-            <!-- Come back to this later -->
-            <li class="dropdown">
-                <a href="#" class="dropbtn">More</a> <ul class="dropdown-content">
-                    <li><a href="./tutor.html">Tutoring</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="./merch.html">Merch</a></li>
-                    
-                </ul>
-            </li>
-        </div>
-        </ul>
-</nav>
+      <div class="navCenter">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./soseTeam.html">Team</a></li>
+        <li><a href="./soseJoin.html">Join</a></li>
+        <li><a href="./soseEvents.html">Events</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">More</a>
+          <ul class="dropdown-content">
+            <li><a href="./tutor.html">Tutoring</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="./merch.html">Merch</a></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
 
+  <!-- Title -- Koosh -->
+  <div class="helloworld">
+    Society Of Software Engineers Merchandise
+  </div>
 
+  <br>
 
-	<body>
+  <!-- Merch Table -- Koosh -->
+  <table style="width:100%; text-align:center; border-collapse: collapse;">
+    <tr>
+      <td class="size">
+        <img src="../pictures/merch/hoodie_sose.png" alt="Merch 1"><br>
+        <strong>SOSE Hoodie</strong><br>
+        Price: $40.00
+      </td>
+      <td class="size">
+        <img src="../pictures/merch/shirt_sose.png" alt="Merch 2"><br>
+        <strong>SOSE Shirt</strong><br>
+        Price: $20.00
+      </td>
+      <td class="size">
+        <img src="../pictures/merch/hat_sose.png" alt="Merch 3"><br>
+        <strong>SOSE Hat</strong><br>
+        Price: $10.00
+      </td>
+    </tr>
+    <tr>
+      <td class="size">
+        <img src="../pictures/merch/backpack_sose.png" alt="Merch 4"><br>
+        <strong>SOSE Backpack</strong><br>
+        Price: $30.00
+      </td>
+      <td class="size">
+        <img src="../pictures/merch/laptop_case.png" alt="Merch 5"><br>
+        <strong>SOSE Laptop Case</strong><br>
+        Price: $20.00
+      </td>
+      <td class="size">
+        <img src="../pictures/merch/sticker_sose.png" alt="Merch 6"><br>
+        <strong>SOSE Club Sticker</strong><br>
+        Price: $5.00
+      </td>
+    </tr>
+  </table>
 
-		<div class="helloworld">
-		Society Of Software Engineers Merchandise
-		</div>
-    </br>
+  <!-- GSAP Scripts -- Koosh -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="../main.js"></script>
 
-
-
-	<table style="width:100%; text-align:center; border-collapse: collapse;">
-  <tr>
-    <td class="size">
-      <img src="../pictures/merch/hoodie_sose.png" alt="Merch 1"><br>
-      <strong>SOSE Hoodie</strong><br>
-      Price: $40.00
-    </td>
-    <td class="size">
-      <img src="../pictures/merch/shirt_sose.png" alt="Merch 2"><br>
-      <strong>SOSE Shirt</strong><br>
-      Price: $20.00
-    </td>
-    <td class="size">
-      <img src="../pictures/merch/hat_sose.png" alt="Merch 3"><br>
-      <strong>SOSE Hat</strong><br>
-      Price: $10.00
-    </td>
-  </tr>
-  <tr>
-    <td class="size">
-      <img src="../pictures/merch/backpack_sose.png" alt="Merch 4"><br>
-      <strong>SOSE Backpack</strong><br>
-      Price: $30.00
-    </td>
-    <td class="size">
-      <img src="../pictures/merch/laptop_case.png" alt="Merch 5"><br>
-      <strong>SOSE Laptop case</strong><br>
-      Price: $20.00
-    </td>
-    <td class="size">
-      <img src="../pictures/merch/sticker_sose.png" alt="Merch 6"><br>
-      <strong>SOSE club sticker</strong><br>
-      Price: $5.00
-    </td>
-  </tr>
-  
-</table>
-
-
-
-
-	</body>
-	</html>
+</body>
+</html>
