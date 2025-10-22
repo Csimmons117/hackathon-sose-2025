@@ -32,11 +32,11 @@ text-align: center;
 }
 
 /* Remove any boxed background that may appear behind the navbar */
-nav, nav ul, .navCenter, nav ul.navbar, nav li {
+/*nav, nav ul, .navCenter, nav ul.navbar, nav li {
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
-}
+}*/
 nav li{
 	color: white;
 	padding: 10px;
