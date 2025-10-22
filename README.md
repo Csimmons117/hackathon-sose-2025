@@ -53,10 +53,9 @@ This project is intended to support SOSE’s growth and improve the member exper
 
 ## Submission Materials
 
-- GitHub Repo: [Insert link here]  
-- Live Site: https://csunsose.com  
-- Video Demo: [SOSE website Demo](https://www.youtube.com/watch?v=v7sa5HigGeo)  
-- Optional Screenshots, UI mockups, or design documents: [Insert if available]
+- GitHub Repo: [Website repo](https://github.com/Csimmons117/hackathon-sose-2025)  
+- Live Site: [csunsose.com](https://csunsose.com)  
+- Video Demo: [SOSE website Demo](https://www.youtube.com/watch?v=v7sa5HigGeo) 
 
 ---
 
