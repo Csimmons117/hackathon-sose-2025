@@ -16,7 +16,7 @@ padding: 0%;
 /*Start of nav*/
 nav{
 	font-size: 35px;
-	margin: 20px;
+  margin: 20px;
 	/* border-bottom: 10px solid purple; */
 	text-align: center;
 
@@ -29,6 +29,13 @@ display: inline-flex;
 text-align: center;
 
 
+}
+
+/* Remove any boxed background that may appear behind the navbar */
+nav, nav ul, .navCenter, nav ul.navbar, nav li {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 nav li{
 	color: white;
@@ -105,6 +112,11 @@ nav {
 	/* border: hotpink, 10px, solid ; */
 	font-size: 50px;
 	text-align: center;
+}
+/* neon glow for the pixel headline used on news page */
+.helloworld{
+  color: #fff;
+  text-shadow: 0 0 10px #c58cff, 0 0 28px #b000ff;
 }
 .soseTitle{
 	font-size: 50px;
