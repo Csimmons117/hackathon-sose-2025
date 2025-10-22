@@ -68,12 +68,3 @@ Although this project also supports student engagement and community (which loos
 
 ---
 
-## Possible Enhancements (What We May Have Missed)
-
-- Accessibility improvements following WCAG 2.1 standards to ensure all students can access the site.
-- Integration of analytics tools (e.g., Google Analytics) to track user interactions and improve content.
-- Embedding an events calendar or syncing with MataSync for real-time updates.
-- Implementing SEO best practices to improve discoverability in search engines.
-- Ensuring full mobile responsiveness across all devices.
-
----
