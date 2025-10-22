@@ -58,7 +58,7 @@ This project is intended to support SOSE’s growth and improve the member exper
 - Video Demo: [SOSE website Demo](https://www.youtube.com/watch?v=v7sa5HigGeo) 
 
 ---
-
+<!--
 ## Best Fit Category: Hack for SOSE
 
 Although this project also supports student engagement and community (which loosely aligns with the "Hack for Social Connection" track), its primary purpose is to directly support the SOSE community through infrastructure and resources. That makes it a strong fit for the "Hack for SOSE" category.
@@ -67,4 +67,5 @@ Although this project also supports student engagement and community (which loos
 "Built and deployed a public-facing website for a student software engineering society, supporting community engagement and member resources using open web technologies."
 
 ---
+-->
 
