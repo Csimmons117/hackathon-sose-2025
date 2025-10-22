@@ -55,7 +55,7 @@ This project is intended to support SOSE’s growth and improve the member exper
 
 - GitHub Repo: [Insert link here]  
 - Live Site: https://csunsose.com  
-- Video Demo: [Insert video link – max 3 minutes]  
+- Video Demo: [SOSE website Demo](https://www.youtube.com/watch?v=v7sa5HigGeo)  
 - Optional Screenshots, UI mockups, or design documents: [Insert if available]
 
 ---
