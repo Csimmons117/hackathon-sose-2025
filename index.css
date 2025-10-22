@@ -201,6 +201,11 @@ h1, h2, nav {
 	width: 600px; /* Fixed width to avoid resizing */
 	display: flex;
 	text-align: center;
+	
+	/* spacing between members -- Koosh 
+	margin-top: 80px;
+	margin-bottom: 80px;
+	*/
 }
 
 .picture {

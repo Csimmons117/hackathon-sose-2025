@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-		<title>SOSE | Society Of Software Engineers</title>
-		<link rel="stylesheet" type="text/css" href="../index.css">
-	</head>
-<nav>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merch | Society of Software Engineers</title>
+  <link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+
+<body style="background-color: black">
+
+  <!-- Navigation -- Koosh -->
+  <nav>
     <ul>
-        <!-- <li><img src="./pictures/sose_logo.jpg" style="width: 30%;"></li> -->
-  
-        <div class="navCenter">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./soseTeam.html">Team</a></li>
-            <li><a href="./soseJoin.html">Join</a></li>
-            <li> <a href="./soseEvents.html">Events</a></li>
-            <!-- Come back to this later -->
-            <li class="dropdown">
-                <a href="#" class="dropbtn">More</a> <ul class="dropdown-content">
-                    <li><a href="./tutor.html">Tutoring</a></li>
-                    <li><a href="./news.html">News</a></li>
-                    <li><a href="./merch.html">Merch</a></li>
-                    
-                </ul>
-            </li>
-        </div>
-        </ul>
-</nav>
-	<body>
-  		<div class="helloworld">
-  		  Society Of Software Engineers Merchandise
-  		</div>
-  	<table style="width:100%; text-align:center; border-collapse: collapse;">
+      <div class="navCenter">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./soseTeam.html">Team</a></li>
+        <li><a href="./soseJoin.html">Join</a></li>
+        <li><a href="./soseEvents.html">Events</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">More</a>
+          <ul class="dropdown-content">
+            <li><a href="./tutor.html">Tutoring</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="./merch.html">Merch</a></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Title -- Koosh -->
+  <div class="helloworld">
+    Society Of Software Engineers Merchandise
+  </div>
+
+  <br>
+
+  <!-- Merch Table -- Koosh -->
+  <table style="width:100%; text-align:center; border-collapse: collapse;">
     <tr>
       <td class="size">
         <img src="../pictures/merch/hoodie_sose.png" alt="Merch 1"><br>
@@ -55,12 +62,12 @@
       </td>
       <td class="size">
         <img src="../pictures/merch/laptop_case.png" alt="Merch 5"><br>
-        <strong>SOSE Laptop case</strong><br>
+        <strong>SOSE Laptop Case</strong><br>
         Price: $20.00
       </td>
       <td class="size">
         <img src="../pictures/merch/sticker_sose.png" alt="Merch 6"><br>
-        <strong>SOSE club sticker</strong><br>
+        <strong>SOSE Club Sticker</strong><br>
         Price: $5.00
       </td>
     </tr>
@@ -77,5 +84,11 @@
       <script>
         document.getElementById('year').textContent = new Date().getFullYear();
       </script>
+  <!-- GSAP Scripts -- Koosh -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="../main.js"></script>
+
+
 	</body>
 </html>
