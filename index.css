@@ -223,7 +223,7 @@ h1, h2, nav {
 	object-fit: cover;
 	object-position: 40% 30%; /*focus area x, y*/
 }
-
+   
 
 .words {
 	margin-left: 50px;
@@ -264,6 +264,9 @@ h1, h2, nav {
 	text-align: center;
 	background-color:black;
 	color: white;
+}
+.description h1:hover {
+	color: purple;
 }
 
 
