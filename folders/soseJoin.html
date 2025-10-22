@@ -1,58 +1,14 @@
-<!-- <!DOCTYPE html> -->
-<!-- <html> -->
-	<!-- <head> -->
-	    <!-- <title></title> -->
-	    <!-- <link rel="stylesheet" type="text/css" href="../index.css"> -->
-	<!-- </head> -->
-<!-- <nav> -->
-    <!-- <ul> -->
-        <!-- <li><img src="./pictures/sose_logo.jpg" style="width: 30%;"></li> -->
-  <!--  -->
-        <!-- <div class="navCenter"> -->
-            <!-- <li><a href="../index.html">Home</a></li> -->
-            <!-- <li><a href="./soseTeam.html">Team</a></li> -->
-            <!-- <li><a href="./soseJoin.html">Join</a></li> -->
-            <!-- <li> <a href="./soseEvents.html">Events</a></li> -->
-            <!-- Come back to this later -->
-            <!-- <li class="dropdown"> -->
-                <!-- <a href="#" class="dropbtn">More</a> <ul class="dropdown-content"> -->
-                    <!-- <li><a href="./tutor.html">Tutoring</a></li> -->
-                    <!-- <li><a href="./news.html">News</a></li> -->
-                    <!-- <li><a href="./merch.html">Merch</a></li> -->
-                    <!--  -->
-                <!-- </ul> -->
-            <!-- </li> -->
-        <!-- </div> -->
-        <!-- </ul> -->
-<!-- </nav> -->
-    <!-- <body> -->
-        <!-- <div class="helloworld"> -->
-            <!-- Improve Your Skills Today! -->
-        <!-- </div> -->
-<!--  -->
-	    <!-- <div class="typing-container"> -->
-            <!-- <p class="typed-text"><a href="https://csun.campuslabs.com/engage/organization/sose">Click here to join today!</a></p> -->
-        <!-- </div> -->
-    <!-- </body> -->
-<!-- </html> -->
-<!-- Homies hate my html setup : ^ ( -->
-
-
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Join SOSE — Society of Software Engineers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- use the shared site styles -->
     <link rel="stylesheet" href="../index.css" />
 
     <style>
-      /* --- PAGE-SPECIFIC STYLES (kept minimal, build on index.css) --- */
+      /* --- PAGE STYLES -- Koosh --- */
 
-      /* Hero uses your big club photo */
       .join-hero {
         position: relative;
         min-height: 50vh;
@@ -83,7 +39,6 @@
       .join-hero h1 { font-size: clamp(28px, 5vw, 56px); margin: 6px 0 4px; }
       .join-hero p { opacity: .95; font-size: clamp(16px, 2.6vw, 22px); }
 
-      /* Three CTA cards */
       .join-cards {
         width:min(1100px,92%);
         margin: 32px auto;
@@ -105,15 +60,9 @@
         box-shadow: 0 8px 24px rgba(176,48,255,.15);
       }
       .join-card__icon {
-        width:64px; 
-        height:64px; 
-        margin-inline:auto; 
-        margin-bottom:10px;
-        width: 64px;
-        object-fit: contain;
-        display: block;
-        display:grid; 
-        place-items: center;
+        width:64px; height:64px;
+        margin-inline:auto; margin-bottom:10px;
+        object-fit: contain; display:grid; place-items: center;
       }
       .join-card h3 { color: var(--accent); margin: 4px 0 6px; }
       .join-card p { color:#d6d6d6; min-height: 44px; }
@@ -123,7 +72,6 @@
         display:flex; gap:10px; justify-content:center; flex-wrap:wrap;
       }
 
-      /* Link buttons reuse .btn tokens from index.css */
       .btn--brand-red    { border-color:#c3002f; color:#fff; background:#c3002f; }
       .btn--brand-blue   { border-color:#0a66c2; color:#fff; background:#0a66c2; }
       .btn--brand-blurple{ border-color:#5865F2; color:#fff; background:#5865F2; }
@@ -131,7 +79,6 @@
       .btn--brand-blue:hover    { background:#1473d2; }
       .btn--brand-blurple:hover { background:#6b74f7; }
 
-      /* Info section */
       .join-steps {
         width:min(900px,92%);
         margin: 26px auto 40px;
@@ -151,31 +98,28 @@
     </style>
   </head>
 
-<nav>
-    <ul>
-        <!-- <li><img src="./pictures/sose_logo.jpg" style="width: 30%;"></li> -->
-  
-        <div class="navCenter">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./soseTeam.html">Team</a></li>
-            <li><a href="./soseJoin.html">Join</a></li>
-            <li> <a href="./soseEvents.html">Events</a></li>
-            <!-- Come back to this later -->
-            <li class="dropdown">
-                <a href="#" class="dropbtn">More</a> <ul class="dropdown-content">
-                    <li><a href="./tutor.html">Tutoring</a></li>
-                    <li><a href="./news.html">News</a></li>
-                    <li><a href="./merch.html">Merch</a></li>
-                    
-                </ul>
-            </li>
-        </div>
-        </ul>
-</nav>
   <body>
-    <!-- (Optional) keep your existing nav; this file focuses on the join content -->
+    <!-- NAVIGATION -- Koosh -->
+    <nav>
+      <ul>
+        <div class="navCenter">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./soseTeam.html">Team</a></li>
+          <li><a href="./soseJoin.html">Join</a></li>
+          <li><a href="./soseEvents.html">Events</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">More</a>
+            <ul class="dropdown-content">
+              <li><a href="./tutor.html">Tutoring</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./merch.html">Merch</a></li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </nav>
 
-    <!-- HERO -->
+    <!-- HERO -- Koosh -->
     <section class="join-hero">
       <div class="join-hero__content">
         <div class="join-hero__logo">
@@ -186,12 +130,11 @@
       </div>
     </section>
 
-    <!-- THREE LINK CARDS -->
+    <!-- JOIN CARDS -- Koosh -->
     <section class="join-cards">
-      <!-- Matasync -->
       <article class="join-card">
-        <div class="join-card__icon" aria-hidden="true">
-            <img src="../pictures/Matahead.png" alt="Matasync Logo">
+        <div class="join-card__icon">
+          <img src="../pictures/Matahead.png" alt="Matasync Logo">
         </div>
         <h3>Matasync (Official)</h3>
         <p>Join our university roster and get notified for meetings and events.</p>
@@ -200,10 +143,9 @@
         </div>
       </article>
 
-      <!-- LinkedIn -->
       <article class="join-card">
-        <div class="join-card__icon" aria-hidden="true">
-            <img src="../pictures/Linked%20In%20photo.png" alt="LinkedIn logo">
+        <div class="join-card__icon">
+          <img src="../pictures/Linked%20In%20photo.png" alt="LinkedIn logo">
         </div>
         <h3>LinkedIn</h3>
         <p>Follow SOSE on LinkedIn for updates, photos, and opportunities.</p>
@@ -212,10 +154,9 @@
         </div>
       </article>
 
-      <!-- Discord -->
       <article class="join-card">
-        <div class="join-card__icon" aria-hidden="true">
-            <img src="../pictures/Discord-Symbol-Blurple.png" alt="Discord logo">
+        <div class="join-card__icon">
+          <img src="../pictures/Discord-Symbol-Blurple.png" alt="Discord logo">
         </div>
         <h3>Discord</h3>
         <p>Chat with members, get help, and join project squads in real time.</p>
@@ -225,7 +166,7 @@
       </article>
     </section>
 
-    <!-- HOW TO JOIN (quick steps) -->
+    <!-- STEPS --Koosh -->
     <section class="join-steps">
       <h2>How to join</h2>
       <ol>
@@ -238,7 +179,7 @@
       </p>
     </section>
 
-    <!-- Optional footer using your .footer class -->
+    <!-- FOOTER -- Koosh -->
     <div class="footer">
       <p>&copy; <span id="year"></span> Society of Software Engineers • CSUN</p>
       <p>
@@ -251,11 +192,10 @@
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-  <!-- This loads up all the necessary scripts -- Koosh -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="./main.js"></script>
 
+    <!-- GSAP ANIMATIONS -- Koosh -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>
-
