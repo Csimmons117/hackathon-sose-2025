@@ -207,46 +207,41 @@ h1, h2, nav {
 	display: flex;
 	background-color: black;
 }
+/* TEAM PAGE SPACING -- Koosh */
 .main {
-	margin-left: auto;
-	margin-right: auto;
-	width: 600px; /* Fixed width to avoid resizing */
-	display: flex;
-	text-align: center;
-	
-	/* spacing between members -- Koosh 
-	margin-top: 80px;
-	margin-bottom: 80px;
-	*/
+  display: flex;
+  align-items: center;        
+  justify-content: flex-start; 
+  gap: 50px;                   
+  margin: 60px auto;
+  width: 80%;
+  max-width: 900px;            
+  flex-wrap: nowrap;
 }
 
+
 .picture {
-	width: 150px;
-	height: 150px;
-	/*border: 2px solid black; /* FIXED: correct syntax for border */
-	overflow: hidden;
-	background-color: black;
-	border-radius: 50%; /*makes the picture a pretty circle*/
+  flex-shrink: 0;             
 }
 
 .picture img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	object-position: 40% 30%; /*focus area x, y*/
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;          
+  object-fit: cover;
+  border: 3px solid purple;
+  display: block;
 }
 
 
+
 .words {
-	margin-left: 50px;
-	display: flex;
-	flex-direction: column; 
-	justify-content: center;
-	text-align: left;
-	width: 300px; /* Add fixed width */
-	height: 150px; /* Match picture height */
-	font-size: 30px;
-	white-space: nowrap; /* Prevent text from wrapping */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.4;
 }
 
 .Announcements{
@@ -503,5 +498,10 @@ footer {
   .gallery { grid-template-columns: 1fr; }
 }
 
+section {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
 
    
