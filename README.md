@@ -58,6 +58,21 @@ This project is intended to support SOSE’s growth and improve the member exper
 - Video Demo: [SOSE website Demo](https://www.youtube.com/watch?v=v7sa5HigGeo) 
 
 ---
+
+
+## Website for CSUN SOSE
+
+<img src="./pictures/website_design/page1.png">
+<img src="./pictures/website_design/page1.2.png">
+<img src="./pictures/website_design/page2.png">
+<img src="./pictures/website_design/page4.png">
+<img src="./pictures/website_design/page5.png">
+<img src="./pictures/website_design/page6.png">
+<img src="./pictures/website_design/page3.png">
+
+
+
+
 <!--
 ## Best Fit Category: Hack for SOSE
 
